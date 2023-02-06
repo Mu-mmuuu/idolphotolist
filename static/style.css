@@ -4,7 +4,7 @@ body{margin:0px; font-family:sans-serif;}
     background-color:mediumaquamarine;
     color:#fff;
     /* text-align:center; */
-    height:70px;width:auto;
+    height:auto;width:auto;
     margin: 0px;
     padding:20px 40px;
     font-weight: bold;
@@ -26,31 +26,62 @@ body{margin:0px; font-family:sans-serif;}
     background: #a7c3d3;
     border-radius: 10px;
     max-width:75%;
-    width: 75%;
+    width: auto;
     margin:auto;
     padding-bottom:10px;
 }
 .filter-zone-title {
     display: flex;
     color:#062f51;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: evenly;
     padding: 10px 3px 0px 3px;
     width: auto;
 }
+.container{
+    display:flex;
+    padding:10px;
+    float: right;
+}
+.clearlabel {
+    background: #edeeef;
+    border: 1.5px solid  #062f51;
+    border-radius: 5px;
+    float: right;
+    padding: 5px 9px;
+    font-size:80%;
+    margin-left:auto; 
+    margin-right:1em;
+
+}
+.check.close-filter{
+    background: #edeeef;
+    font-size:80%;
+    font-weight:normal;
+    border-radius: 5px;
+    border: 1.5px solid #062f51;
+    margin-left:auto;
+}
+.check.close-filter.active{margin-bottom:0px;}
+
 .check-title{
     font-weight: bold;
     color:#062f51;
-    margin:10px 0px 5px 0px;
+    margin:5px 0px 5px 0px;
 
 }
-.clear-button{display:flex;}
+
 hr{
     border: none;
     border-bottom: 2px solid #b5ccdf;
     margin: 10px;
 }
-.filterimg{vertical-align:middle;}
+.filterimg{vertical-align:middle;
+}
+.filterlabel img{
+    height:2em;
+    vertical-align: bottom;
+}
 
 .check {
     background:#e8e8e8;
@@ -83,14 +114,7 @@ hr{
 
 .check-content0{padding:15px;}
 .check-content {display: none;}
-.check.close-filter{
-    margin-left:auto;
-    margin-right:20px;
-    margin-bottom:5px;
-    border-radius: 10px;
-    border: 1.5px solid #062f51;
-}
-.check.close-filter.active{margin-bottom:0px;}
+
 input.filter{display: none;}
 
 .filterlabel ,.filterlabel {
@@ -104,7 +128,7 @@ input.filter{display: none;}
     padding: 4px 6.5px;
     min-width: 30px;
     height: 1.5em;
-    margin: 0.1em 0.01em;
+    margin: 0.25em 0.05em;
 }
 input.filter:checked + .filterlabel {
     background: #bfd8eb;
@@ -112,18 +136,7 @@ input.filter:checked + .filterlabel {
     font-weight: bold;
 }
 
-.clearlabel {
-    background: #eee;
-    border: 1px solid #888;
-    border-radius: 5px;
-    float: right;
-    padding: 5px 9px;
-    font-size:80%;
-    margin-top:20px;
-    margin-right:20px;
-    margin-left:auto;
 
-}
 /* 条件に合致しないフォトを非表示にする機能 */
 .hidden  tr:not(.listtitle) {display: none;}
 .result tr.last {display: table-row;}

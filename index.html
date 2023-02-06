@@ -11,7 +11,7 @@
 </head>
 
 <body class="no-scrollable-main">
-<div id="container" class="container cf">
+<div class="cf">
     <div id="header-container" class="header-container">
         <div id="header-container-in" class="header-container-in">
             <header class="page-header"> 
@@ -24,7 +24,7 @@
     <div class="wrap">
         <main class="main">
             <header class="article-header post-update">
-                最終更新：2023.2.2
+                最終更新：2023.2.2 
             </header>
             <article class="article">
                 <div class="entry-content cf">
@@ -32,10 +32,16 @@
                         <div class="filter-zone-title">
                             <div class="check active" onclick="changeTab()"><img class = "filterimg" loading = "lasy" src="static/img/photo_filter.png" width = 30px height = 30px alt="●">フォトで検索</div>
                             <div class="check" onclick="changeTab()"><img class = "filterimg" loading = "lasy" src="static/img/idol_filter.png" width = 30px height = 30px alt="●">アイドルで検索</div>
-                            <div class="check close-filter">フィルターを閉じる</div> 
                         </div>
                         <div class="filter-content">
                             <div class="check-content show">
+                                <div class="container">
+                                    <div class="clear-button">
+                                        <input type="checkbox" class="filter" onchange="clearall()" id="clearall-1">
+                                        <label for="clearall-1" class="clearlabel">全てクリア</label>
+                                    </div>
+                                        <div class="check close-filter">フィルターを閉じる</div> 
+                                </div>
                                 <form class="check-content0" name="photofilter">
                                     <div class="check-title">フォト情報</div>
                                     <div class="check-content2">
@@ -155,49 +161,53 @@
                                         <label for="chk12" class="filterlabel">12</label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chk13">
                                         <label for="chk13" class="filterlabel">13</label>
-                                        <div class="clear-button">
-                                            <input type="checkbox" class="filter" onchange="clearall()" id="clearall-2">
-                                            <label for="clearall-2" class="clearlabel">全てクリア</label>
-                                        </div>
+
                                     </div>
                                 </form>
                             </div>
                             <div class="check-content">
+                                <div class="container">
+                                    <div class="clear-button">
+                                        <input type="checkbox" class="filter" onchange="clearall()" id="clearall-2">
+                                        <label for="clearall-2" class="clearlabel">全てクリア</label>
+                                    </div>
+                                        <div class="check close-filter">フィルターを閉じる</div> 
+                                </div>
                                 <form class="check-content0" name="idolfilter">
                                     <div class="check-title">ユニット</div>
                                     <div class="check-content6">
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkJupiter">                                   
-                                        <label for="chkJupiter" class="filterlabel"><img loading = "lasy" src="static/img/unit/Jupiter.png" width = 50px height = 30px alt="Jupiter"></label>
+                                        <label for="chkJupiter" class="filterlabel"><img loading = "lasy" src="static/img/unit/Jupiter.png" alt="Jupiter"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()"  id="chkdrasta">
-                                        <label for="chkdrasta" class="filterlabel"><img loading = "lasy" src="static/img/unit/drasta.png" width = 50px height = 30px alt="DRAMATIC STARS"></label>
+                                        <label for="chkdrasta" class="filterlabel"><img loading = "lasy" src="static/img/unit/drasta.png" alt="DRAMATIC STARS"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkAltessimo">
-                                        <label for="chkAltessimo" class="filterlabel"><img loading = "lasy" src="static/img/unit/Altessimo.png" width = 50px height = 30px alt="Altessimo"></label>
+                                        <label for="chkAltessimo" class="filterlabel"><img loading = "lasy" src="static/img/unit/Altessimo.png" alt="Altessimo"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkBeit">
-                                        <label for="chkBeit" class="filterlabel"><img loading = "lasy" src="static/img/unit/Beit.png" width = 50px height = 30px alt="Beit"></label>
+                                        <label for="chkBeit" class="filterlabel"><img loading = "lasy" src="static/img/unit/Beit.png" alt="Beit"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkW">
-                                        <label for="chkW" class="filterlabel"><img loading = "lasy" src="static/img/unit/W.png" width = 50px height = 30px alt="W"></label>
+                                        <label for="chkW" class="filterlabel"><img loading = "lasy" src="static/img/unit/W.png" alt="W"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkFRAME">
-                                        <label for="chkFRAME" class="filterlabel"><img loading = "lasy" src="static/img/unit/FRAME.png" width = 50px height = 30px alt="FRAME"></label>
+                                        <label for="chkFRAME" class="filterlabel"><img loading = "lasy" src="static/img/unit/FRAME.png" alt="FRAME"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chksai">
-                                        <label for="chksai" class="filterlabel"><img loading = "lasy" src="static/img/unit/sai.png" width = 50px height = 30px alt="彩"></label>
+                                        <label for="chksai" class="filterlabel"><img loading = "lasy" src="static/img/unit/sai.png" alt="彩"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkHighJoker">
-                                        <label for="chkHighJoker" class="filterlabel"><img loading = "lasy" src="static/img/unit/HighJoker.png" width = 50px height = 30px alt="High×Joker"></label>
+                                        <label for="chkHighJoker" class="filterlabel"><img loading = "lasy" src="static/img/unit/HighJoker.png" alt="High×Joker"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkshinsoku">
-                                        <label for="chkshinsoku" class="filterlabel"><img loading = "lasy" src="static/img/unit/shinsoku.png" width = 50px height = 30px alt="神速一魂"></label>
+                                        <label for="chkshinsoku" class="filterlabel"><img loading = "lasy" src="static/img/unit/shinsoku.png" alt="神速一魂"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkCafeParade">
-                                        <label for="chkCafeParade" class="filterlabel"><img loading = "lasy" src="static/img/unit/CafeParade.png" width = 50px height = 30px alt="Cafe Parade"></label>
+                                        <label for="chkCafeParade" class="filterlabel"><img loading = "lasy" src="static/img/unit/CafeParade.png" alt="Cafe Parade"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkmofu">
-                                        <label for="chkmofu" class="filterlabel"><img loading = "lasy" src="static/img/unit/mofu.png" width = 50px height = 30px alt="もふもふえん"></label>
+                                        <label for="chkmofu" class="filterlabel"><img loading = "lasy" src="static/img/unit/mofu.png" alt="もふもふえん"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkSEM">
-                                        <label for="chkSEM" class="filterlabel"><img loading = "lasy" src="static/img/unit/SEM.png" width = 50px height = 30px alt="S.E.M"></label>
+                                        <label for="chkSEM" class="filterlabel"><img loading = "lasy" src="static/img/unit/SEM.png" alt="S.E.M"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkkogado">
-                                        <label for="chkkogado" class="filterlabel"><img loading = "lasy" src="static/img/unit/kogado.png" width = 50px height = 30px alt="THE虎牙道"></label>
+                                        <label for="chkkogado" class="filterlabel"><img loading = "lasy" src="static/img/unit/kogado.png" alt="THE虎牙道"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkF-LAGS">
-                                        <label for="chkF-LAGS" class="filterlabel"><img loading = "lasy" src="static/img/unit/F-LAGS.png" width = 50px height = 30px alt="F-LAGS"></label>
+                                        <label for="chkF-LAGS" class="filterlabel"><img loading = "lasy" src="static/img/unit/F-LAGS.png" alt="F-LAGS"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkLegenders">
-                                        <label for="chkLegenders" class="filterlabel"><img loading = "lasy" src="static/img/unit/Legenders.png" width = 50px height = 30px alt="Legenders"></label>
+                                        <label for="chkLegenders" class="filterlabel"><img loading = "lasy" src="static/img/unit/Legenders.png" alt="Legenders"></label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkCFIRST">
-                                        <label for="chkCFIRST" class="filterlabel"><img loading = "lasy" src="static/img/unit/C_FIRST.png" width = 50px height = 30px alt="C.FIRST"></label>
+                                        <label for="chkCFIRST" class="filterlabel"><img loading = "lasy" src="static/img/unit/C_FIRST.png" alt="C.FIRST"></label>
                                     </div>
                                     <hr>
                                     <div class="check-title">アイドル</div>
@@ -300,10 +310,6 @@
                                         <label for="chkNo_48" class="filterlabel">花園 百々人</label>
                                         <input type="checkbox" class="filter" onchange="goFilter()" id="chkNo_49">
                                         <label for="chkNo_49" class="filterlabel">眉見 鋭心</label>
-                                        <div class="clear-button">
-                                            <input type="checkbox" class="filter" onchange="clearall()" id="clearall-2">
-                                            <label for="clearall-2" class="clearlabel">全てクリア</label>
-                                        </div>
                                     </div>
                                 </form>
                             </div>
