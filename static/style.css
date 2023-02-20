@@ -383,13 +383,11 @@ li{list-style:none}
     }
     th {
         display:none;
-        /* flex-wrap:wrap; */
     }
     .idolimg {
         height:50px;
         width:50px;
         margin:1px;
-        /* display:inline; */
     }
     tr {margin:3px;
         }
@@ -417,7 +415,4 @@ li{list-style:none}
     text-align:center;
     padding:10px;
     }
-    
-
-
  }
