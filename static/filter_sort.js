@@ -74,7 +74,7 @@ function goFilter(){
             rarity: ["ssr","sr","r","n"],
             category: ["regular","limited","feslimited","event","yaminabe"],
             center: ["groove","step","style","power","gritter"],
-            skill: ["score","combo","dobble","load","heat","focus","judge","heal","guard"],
+            skill: ["score","combo","boost","effect","load","heat","focus","judge","heal","guard"],
             interval: ["7","8","9","10","11","12","13"]
         },
         part02:{ //セット
