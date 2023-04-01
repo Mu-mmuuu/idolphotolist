@@ -390,15 +390,16 @@ li{list-style:none}
     tr {margin:3px;
         }
 
-    td {display:inline-block;
+    td {
+      display:inline-block;
         border:none;
         word-wrap: break-word;
         margin:0px;
     }
-    /* .onlyPCtext{
+    .onlyPCtext{
        display:none;
        border:none;
-    } */
+    }
     footer{
         border-top:5px solid;
         padding:0px;
